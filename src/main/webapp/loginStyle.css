@@ -1,0 +1,89 @@
+/* Body */
+body {
+  background-image: url("./images/backgroundImage_03.jpg");
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Centered Content */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: calc(100vh - 60px); */
+}
+
+/* Login Form */
+form {
+  border: 1px solid #ccc;
+  padding: 50px 40px;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form select {
+  background-color: #f5f5f5;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Error Message */
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+}

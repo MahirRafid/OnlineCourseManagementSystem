@@ -1,0 +1,384 @@
+@charset "ISO-8859-1";
+html,
+body {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.indexBody {
+  background-image: url("./images/backgroundImage_03.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.indexh1 {
+  color: #f7f9fb;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 55px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.indexDiv label {
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 0px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 0px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+input[type="submit"] {
+  background-color: #3aafa9;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 700;
+}
+input[type="submit"]:hover {
+  background-color: #2b7a78;
+}
+
+/* css for student page  */
+
+.studentPageBody {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.studentInfoDiv {
+  margin: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  background-color: #17252a;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.add-course {
+  /* display: block; */
+  padding: 40px 30px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.add-course a {
+  padding: 12px 30px;
+  background-color: #3aafa9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  /* transition: background-color 0.2s ease-in-out; */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add-course a:hover {
+  background-color: #2b7a78;
+}
+
+.student-info {
+  text-align: left;
+  padding-left: 40px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  margin: 15px;
+}
+
+.spanTag {
+  font-weight: 700;
+}
+
+.student-info h2 {
+  margin: 10px 0;
+}
+
+.stuInfoHead {
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.flexDiv {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.courseHeading {
+  padding: 13px 0px;
+  font-size: 36px;
+}
+
+.student-info {
+  padding: 35px 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.student-info,
+.courseDiv table {
+  margin: 30px 55px;
+  box-shadow: 0.1em 0.1em 1em rgba(177, 177, 177, 0.3);
+}
+
+.student-info th,
+td {
+  padding: 10px 20px;
+}
+
+.courseDiv th {
+  padding: 20px 40px;
+}
+
+.courseDiv td {
+  padding: 15px 10px;
+}
+
+.courseDiv table {
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.courseTable {
+  text-align: center;
+  padding-right: 40px;
+}
+
+/* styles for offeredCourses */
+
+form {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px;
+  background-color: #3aafa9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #2b7a78;
+}
+
+.courseEnrollment {
+  width: 40%;
+  margin-top: 50px;
+}
+
+.courseEnrollment input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 0px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.courseEnrollment label {
+  text-align: left;
+}
+
+/* styles for teacher pages */
+
+.teacherPage {
+  font-family: "Ubuntu", sans-serif;
+  /* font-weight: 400; */
+}
+
+.teacherTable {
+  width: 90%;
+}
+
+/*
+  .course-list {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .course-header {
+    font-weight: bold;
+  }
+  
+  .course-header th {
+    padding: 15px;
+    font-size: 20px;
+  }
+  
+  .show-students {
+    margin-top: 20px;
+    text-align: center;
+  }
+  */
+
+.teacherTable button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #3aafa9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+}
+
+.teacherPage table {
+  margin: 40px auto;
+}
+
+.teacherPage th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer {
+  height: 30px;
+  background-color: white;
+}
+
+/*
+  
+  .student-list {
+    display: none;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .student-list h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .student-table {
+    display: none;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  } */
+
+/* styles for adminPage */
+
+.adminPage {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.adminDiv {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  overflow: hidden;
+}
+
+.adminPage form {
+  /* margin: 55px; */
+  width: 540px;
+}
+#styleButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#styleButton:hover {
+  background-color: #3e8e41;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}

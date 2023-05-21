@@ -1,0 +1,148 @@
+/* Style the table */
+html,
+body {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.studentInfoDiv {
+  margin: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  background-color: #17252a;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+input[type="submit"] {
+  background-color: #3aafa9;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 700;
+}
+input[type="submit"]:hover {
+  background-color: #2b7a78;
+}
+
+.stuInfoHead {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 600;
+}
+table {
+  border-collapse: collapse; /* Remove space between cells */
+  width: 80%; /* Set the table width */
+  margin: 0 auto; /* Center the table */
+}
+
+th,
+td {
+  text-align: center; /* Align text to left */
+  padding: 8px; /* Add padding */
+}
+
+th {
+  background-color: #4caf50; /* Set the header background color */
+  color: white;
+}
+
+/* Set the alternate row background color */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Set the table border */
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+nav {
+  background-color: blue;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.navbarleft {
+  float: left;
+}
+
+.navbarleft h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbarright {
+  float: right;
+}
+
+.navbarright form {
+  display: inline-block;
+  margin: 10px;
+}
+.teacherheader {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.navbarright input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.navbarright input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+form {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 0px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
