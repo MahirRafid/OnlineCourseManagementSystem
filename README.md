@@ -14,12 +14,12 @@ Here are the functionalities of the website :
 
 ## Brief Overview of the Website : 
 
-<pre>
-  ### Log-in :
-A user must login with his/her email address and password to gain access to the website. A user need to select his/her role(student, admin, teacher) during the login process. </br>
-  
+
+### Log-in :
+A user must login with his/her email address and password to gain access to the website. A user need to select his/her role(student, admin, teacher) during the login process. 
+</br>  
 <img width="1121" alt="1" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/e1d8d9bb-31e0-4dfb-bb73-320bd0b4be41">
-</pre>
+
 
 
 ### Student Dashboard and Course-Registration : 
