@@ -39,7 +39,6 @@ A student can view his enrolled courses and his additional information in the st
 A teacher can see the list of courses assigned to him and also the list of students enrolled under each course. 
 
 ### Admin Dashboard
-### Teacher Dashboard 
 </br>
 
 <img width="1109" alt="5" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/fd05d943-67ef-47a2-9c79-e47728570d2e">
