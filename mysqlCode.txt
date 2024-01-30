@@ -1,81 +1,122 @@
+CREATE DATABASE COURSE_MANAGEMENT_PROJECT; 
+USE COURSE_MANAGEMENT_PROJECT; 
 
-use course_management_system;
-CREATE TABLE admin(
-  username VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL
-);
-INSERT INTO admin (username, password,email) VALUES 
-('adith082', '1111','adibhasan35@gmail.com'),
-('mahir064','2222','mahir64@gmail.com');
-select * from admin;
-
-
-CREATE TABLE student(
-  username VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  registration VARCHAR(255) NOT NULL
-);
-INSERT INTO student (username , password , email ,registration) VALUES 
-('adith82', '1234','adibhasan35@gmail.com','2018331082'),
-('mahir64','5678','mahir64@gmail.com','2018331064'),
-('naim118', '1011','naim118@gmail.com','2018331118'),
-('kawsar85', '1213','kawsar85@gmail.com','2018331085'),
-('rakib104', '1415','rakib104@gmail.com','2018331104'),
-('takrim25', '1617','takrim25@gmail.com','2018331025');
-select * from student;
-
-
-CREATE TABLE teacher(
-  username VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL
+CREATE TABLE STUDENT(
+	STU_NAME VARCHAR(30),
+    REG_NO INT PRIMARY KEY,
+    DEPT VARCHAR(20),
+    SESSION VARCHAR(10),
+    SEM VARCHAR(4),
+    EMAIL VARCHAR(30),
+    PASSWORD VARCHAR(30)
 );
 
-INSERT INTO teacher (username, password,email) VALUES 
-('jeremylang', '4321','jeremy@gmail.com'),
-('austinroy','5621','austing@gmail.com'),
-('severus','9090','severus@gmail.com');
+TRUNCATE STUDENT; 
+INSERT INTO STUDENT VALUES
+	('Mahir Mosleh', 2018331064, 'CSE', '2018-19', '4-2', 'mahirmosleh136@gmail.com', '123456'),
+    ('Abu Sayem', 2018331074, 'CSE', '2018-19', '4-2', 'sayem74@gmail.com', '7891012'),
+    ('Billah Rahman', 2019331004, 'CSE', '2019-20', '3-1', 'billah04@gmail.com', '7823434');
+    
+UPDATE STUDENT SET SEM = '3-2' WHERE REG_NO = 2019331004;
+INSERT INTO STUDENT VALUES ('ABC DEF', 2017331001, 'CSE', '2017-18', '4-2', 'abc@gmail.com', '456456');
+    
+SELECT * FROM STUDENT;
 
-select * from teacher;
-
-CREATE TABLE student_registered(
-  fullname VARCHAR(455) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  registration VARCHAR(255) NOT NULL,
-  coursecode VARCHAR(255) NOT NULL
+DROP TABLE COURSE;
+CREATE TABLE COURSE(
+	COURSE_CODE VARCHAR(10) PRIMARY KEY,
+    COURSE_NAME VARCHAR(20),
+    COURSE_TYPE VARCHAR(10),
+    CREDIT INT,
+    SEM VARCHAR(4)
 );
 
-CREATE TABLE teacher_registered(
-  fullname VARCHAR(455) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  coursecode VARCHAR(255) NOT NULL
+ALTER TABLE COURSE MODIFY COURSE_NAME VARCHAR(100);
+
+TRUNCATE COURSE; 
+INSERT INTO COURSE(COURSE_CODE, COURSE_NAME, COURSE_TYPE, CREDIT, SEM) VALUES 
+	('CSE110', 'Introduction to C Programming', 'Lab', 1.5, '1-1'),
+    ('CSE129', 'Discrete Math', 'Theory', 3.0, '1-2'),
+    ('CSE238', 'Object Oriented Programming', 'Theory', 3.0, '2-1'),
+    ('CSE257', 'Data Structure and Algo', 'Lab', 1.5, '2-2'),
+    ('CSE321', 'Database Management System', 'Lab', 1.5, '3-1'),
+    ('CSE348', 'Computer Graphics', 'Theory', 3.0, '3-2'),
+    ('CSE410', 'Machine Learning', 'Theory', 3.0, '4-1'),
+    ('CSE477', 'Thesis', 'Lab', 4, '4-2');
+    
+INSERT INTO COURSE(COURSE_CODE, COURSE_NAME, COURSE_TYPE, CREDIT, SEM) VALUES
+	('CSE488', 'Software Development', 'Theory', 3, '4-2');
+    
+SELECT * FROM COURSE; 
+
+CREATE TABLE TEACHER(
+	TEACHER_ID VARCHAR(20),
+	TEACHER_NAME VARCHAR(20),
+    EMAIL VARCHAR(20),
+    PASSWORD VARCHAR(20)
 );
-INSERT INTO teacher_registered (fullname, email,coursecode) VALUES 
-('jeremylang','jeremy@gmail.com','CSE310'),
-('austinroy','austing@gmail.com','CSE202'),
-('severus','severus@gmail.com','CSE107'),
-('severus','severus@gmail.com','CSE202');
-select * from teacher_registered;
 
-INSERT INTO student_registered (fullname, email,registration,coursecode) VALUES 
-('Md Adith Mollah','adibhasan35@gmail.com','2018331082','CSE107'),
-('Takrimul Hasan','takrim25@gmail.com','2018331025','CSE310');
+ALTER TABLE TEACHER MODIFY TEACHER_NAME VARCHAR(50);
 
-DROP table student_registered;
-
-
-select * from teacher_registered;
-CREATE TABLE courses(
-  coursecode VARCHAR(455) NOT NULL,
-  coursename VARCHAR(255) NOT NULL
+INSERT INTO TEACHER VALUES
+	('T001', 'Mohammad Shahidur Rahman', 'rahman@sust.edu', '123456'),
+    ('T002', 'Dr Mohammad Reza Selim', 'reza@sust.edu', '235345'),
+    ('T003', 'Dr. Md Farhad Rabbi', 'farhad@sust.edu', '678685'),
+    ('T004', 'Dr. Farida Chowdhury', 'farida@sust.edu', '3454554');
+    
+CREATE TABLE ADMIN(
+	ADMIN_NAME VARCHAR(20),
+    EMAIL VARCHAR(40),
+    PASSWORD VARCHAR(20)
 );
-INSERT INTO courses (coursecode,coursename) VALUES
-('CSE107','Intro to Programming'),
-('CSE202','Object Oriented Programming'),
-('CSE310','Digital Signal Processing');
 
-SELECT * FROM courses;
-select coursename from courses where coursecode='CSE107';
+INSERT INTO ADMIN VALUES
+	('Admin1', 'admin1@sust.edu', '45l6456'),
+    ('Admin2', 'admin2@sust.edu', '5675677');
+    
+SELECT * FROM ADMIN; 
+
+DROP TABLE STUDENT_REGISTERED; 
+CREATE TABLE STUDENT_REGISTERED(
+	REG_NO INT,
+    COURSE_CODE VARCHAR(10)
+);
+
+INSERT INTO STUDENT_REGISTERED VALUES
+	(2018331064, 'CSE477'),
+    (2018331074, 'CSE488'),
+    (2018331064, 'CSE488'),
+    (2019331004, 'CSE348');
+INSERT INTO STUDENT_REGISTERED VALUES (2017331001, 'CSE488');
+
+SELECT * FROM STUDENT_REGISTERED;
+
+CREATE TABLE TEACHER_REGISTERED(
+	TEACHER_ID VARCHAR(20),
+    COURSE_CODE VARCHAR(10)
+);
+
+INSERT INTO TEACHER_REGISTERED VALUES
+	('T001', 'CSE477'),
+    ('T002', 'CSE488'),
+    ('T004', 'CSE348');
+
+INSERT INTO TEACHER_REGISTERED VALUES ('T002', 'CSE238');
+    
+-- STUDENT INFORMATION
+SELECT * FROM STUDENT ; 
+
+-- COURSES REGISTERED BY EACH STUDENT 
+SELECT C.* FROM STUDENT_REGISTERED S
+JOIN COURSE C
+ON S.COURSE_CODE = C.COURSE_CODE
+WHERE S.REG_NO = 2018331064; 
+
+
+-- COURSES ASSIGNED TO EACH TEACHER  
+SELECT * FROM TEACHER_REGISTERED WHERE TEACHER_ID = 'T002';
+
+-- STUDENTS BY EACH COURSE UNDER THAT TEACHER
+SELECT * FROM STUDENT WHERE REG_NO IN (SELECT REG_NO FROM STUDENT_REGISTERED WHERE COURSE_CODE IN (SELECT COURSE_CODE FROM TEACHER_REGISTERED WHERE TEACHER_ID = 'T002' LIMIT 1));
+
 
