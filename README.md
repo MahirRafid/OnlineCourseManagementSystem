@@ -35,6 +35,18 @@ A student can view his enrolled courses and his additional information in the st
 <img width="1099" alt="4" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/88914075-5c15-4420-96ad-d1a818fe08f9">
 
 </br>
+
 A teacher can see the list of courses assigned to him and also the list of students enrolled under each course. 
+
+### Admin Dashboard
+### Teacher Dashboard 
+</br>
+
+<img width="1109" alt="5" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/fd05d943-67ef-47a2-9c79-e47728570d2e">
+
+</br>
+
+An admin can add new courses into the system and he/she can also assign a particular teacher to a specific course using this tab. 
+
 
 
