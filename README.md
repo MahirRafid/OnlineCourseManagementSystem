@@ -23,7 +23,6 @@ A user must login with his/her email address and password to gain access to the 
 ### Student Dashboard and Course-Registration : 
 </br>
 <img width="1123" alt="2" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/87371568-c7f3-40d3-8957-551552122ded">
-</br>
 A student can view his enrolled courses and his additional information in the student tab. Using this tab, a student can also enroll into new courses. 
 </br>
 <img width="1102" alt="3" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/acd250cb-8eca-400f-b0d3-1d39f297ba81">
