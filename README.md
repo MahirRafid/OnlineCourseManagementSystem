@@ -15,3 +15,11 @@ Here are the functionalities of the website :
 ## Brief Overview of the Website : 
 
 <img width="1121" alt="1" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/e1d8d9bb-31e0-4dfb-bb73-320bd0b4be41">
+
+A user must login with his/her email address and password to gain access to the website. A user need to select his/her role(student, admin, teacher) during the login process. 
+
+<img width="1123" alt="2" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/87371568-c7f3-40d3-8957-551552122ded">
+
+A student can view his enrolled courses and his additional information in the student tab. Using this tab, a student can also enroll into new courses. 
+
+<img width="1102" alt="3" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/acd250cb-8eca-400f-b0d3-1d39f297ba81">
