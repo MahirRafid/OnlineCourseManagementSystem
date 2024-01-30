@@ -10,3 +10,8 @@ Here are the functionalities of the website :
 3. The admin user can add new courses in the system and assign a particular teacher to a corresponding course.
 4. A student can enroll in a new course and view all his/her registered courses and other user informations.
 5. A teacher can view his/her corresponding registered course(s) and select a particular course, from these registered courses, to view the list of the registered students for that particular course.
+
+
+## Brief Overview of the Website : 
+
+<img width="1121" alt="1" src="https://github.com/MahirRafid/OnlineCourseManagementSystem/assets/53008288/e1d8d9bb-31e0-4dfb-bb73-320bd0b4be41">
