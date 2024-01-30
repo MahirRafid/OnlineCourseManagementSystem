@@ -31,7 +31,6 @@ A student can view his enrolled courses and his additional information in the st
 
 ### Teacher Dashboard 
 </br>
-
 A teacher can view the list of coursed that are assigned to him/her and also the list of the students corresponding to each course. 
 
 </br>
